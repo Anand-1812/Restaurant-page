@@ -5,13 +5,6 @@ body {
     min-height: 100vh;
     box-sizing: border-box;
     position: relative;
-    background-image: url(./assets/images/backgroundImage.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-color: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(2px);
 }
 
 /* Header Styles */
@@ -19,8 +12,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
-    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1rem 3rem;
+    background-color: #096B68;
     backdrop-filter: blur(4px);
 }
 
@@ -29,25 +22,25 @@ nav {
     display: flex;
     align-items: center;
     gap: 20px;
-    padding: 0.5rem 0;
+    padding: 0.5rem 2rem;
 }
 
 a {
     text-decoration: none;
-    color: #22cbc8;
+    color: #FFFBDE;
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #38f9f6;
+    color: #FFFFFF;
 }
 
 /* Button Styles */
 button {
     padding: 12px 24px;
     background-color: #117a79;
-    color: #ffffff;
+    color: #FFFBDE;
     font-weight: bold;
     border: none;
     border-radius: 10px;
@@ -68,10 +61,8 @@ button:hover {
     margin: 3rem auto;
     padding: 2rem;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(5px);
     border-radius: 12px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     height: 50vh;
 }
 
