@@ -12,6 +12,7 @@ module.exports = {
   },
   devtool: "eval-source-map",
   devServer: {
+    port: 5173,
     watchFiles: ["./src/template.html"],
   },
   plugins: [
