@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 /* Base Styles */
 body {
     margin: 0;
@@ -12,7 +18,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 3rem;
+    padding: 1rem 2rem;
     background-color: #096B68;
     backdrop-filter: blur(4px);
 }
@@ -56,14 +62,12 @@ button:hover {
 
 /* Main Content Styles */
 .content {
-    /* max-width: 900px; */
     width: 100%;
-    margin: 3rem auto;
-    padding: 2rem;
+    margin: 1rem auto;
+    padding: 1rem;
     text-align: center;
     backdrop-filter: blur(5px);
     border-radius: 12px;
-    height: 50vh;
 }
 
 /* Heading */
@@ -80,4 +84,39 @@ button:hover {
     color: #22cbc8;
     line-height: 1.7;
     margin-top: 1rem;
+}
+
+/* Menu Section */
+.table-div {
+    overflow-x: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-table {
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: 1rem;
+    max-width: 400px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.menu-table th,
+.menu-table td {
+    padding: 12px 16px;
+    border: 1px solid black;
+    text-align: left;
+}
+
+.menu-table th {
+    background-color: #117a79;
+    color: white;
+}
+
+.menu-table tr:nth-child(even) {
+    background-color: #f2f2f2;
 }

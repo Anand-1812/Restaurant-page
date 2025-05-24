@@ -11,7 +11,7 @@
 
     // Heading
     const heading = document.createElement("h1");
-    heading.textContent = "Social Brew House ☕ — your perfect place to unwind.";
+    heading.textContent = "Social Brew House ☕";
     heading.className = "main-heading";
 
     //Menu
@@ -24,7 +24,7 @@
 
     function createMenu() {
         const table = document.createElement("table");
-        table.setAttribute('border', 1);
+        table.className = "menu-table";
         const tbody = document.createElement("tbody");
         for (let i = 0;i < menuItems.length;i++) {
             const tr = document.createElement("tr");
